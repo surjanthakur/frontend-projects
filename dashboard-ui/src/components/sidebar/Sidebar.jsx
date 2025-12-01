@@ -1,7 +1,7 @@
 import './sidebar.css'
 export default function Sidebar() {
   return (
-    <div className="sidebar  h-screen w-[260px] bg-white flex flex-col  px-6 py-8 border-r border-gray-200">
+    <div className="sidebar sticky top-0  shadow-2xl h-screen w-[260px] bg-white flex flex-col  px-6 py-8 border-r border-gray-200">
       {/* LOGO */}
       <h1 className="head text-gray-800 font-sans text-start">
         <i class="fa-solid fa-layer-group"></i>&nbsp;Business
