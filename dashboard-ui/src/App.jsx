@@ -1,5 +1,5 @@
 import './App.css'
-import TopGrid from './components/dash-grid/top-grid'
+import Topbar from './components/dash-grid/topbar'
 import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="box-2">
-          <TopGrid />
+          <Topbar />
         </div>
       </div>
     </>
