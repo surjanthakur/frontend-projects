@@ -16,8 +16,8 @@ export default function TopGrid() {
     labels: ['New', 'Returning', 'Inactive'],
     datasets: [
       {
-        data: [2300, 1200, 105],
-        backgroundColor: ['#6366f1', '#22c55e', '#f59e0b'],
+        data: [2300, 1200, 200],
+        backgroundColor: ['#f50a28', '#50d926', '#e2b41d'],
         borderWidth: 0,
         cutout: '70%',
       },
@@ -29,7 +29,7 @@ export default function TopGrid() {
     datasets: [
       {
         data: [2000, 1000],
-        backgroundColor: ['#6366f1', '#22c55e'],
+        backgroundColor: ['#f50a28', '#50d926'],
         borderWidth: 0,
         cutout: '70%',
       },
@@ -80,7 +80,6 @@ export default function TopGrid() {
 
       {/* box-3 USERS */}
       <motion.div
-        {...motionStyle}
         className="box box-3 p-4 rounded-xl"
         style={{ gridArea: 'box-3' }}
       >
@@ -100,7 +99,6 @@ export default function TopGrid() {
 
       {/* box-4 SUBSCRIPTIONS */}
       <motion.div
-        {...motionStyle}
         className="box box-4 p-4 rounded-xl"
         style={{ gridArea: 'box-4' }}
       >

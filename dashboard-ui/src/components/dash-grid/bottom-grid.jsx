@@ -8,8 +8,8 @@ import {
   PointElement,
   Tooltip,
 } from 'chart.js'
+import { motion } from 'motion/react'
 import { Bar, Line } from 'react-chartjs-2'
-
 import './bottomgrid.css'
 
 ChartJS.register(
@@ -101,8 +101,8 @@ export default function BottomGrid() {
         data: [
           1200, 1900, 3000, 2500, 3435, 3455, 788, 4560, 6005, 2346, 1209, 2350,
         ],
-        backgroundColor: '#22c55e',
-        borderRadius: 6,
+        backgroundColor: '#50d926',
+        borderRadius: 0,
         barThickness: 50,
       },
     ],
@@ -130,7 +130,9 @@ export default function BottomGrid() {
   return (
     <div className="bottom-grid mt-4">
       {/* box-1 */}
-      <div
+      <motion.div
+        transition={{ ease: 'backInOut' }}
+        whileHover={{ scaleY: 1.2, scaleX: 1.2 }}
         className="box box-1 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-1' }}
       >
@@ -140,7 +142,7 @@ export default function BottomGrid() {
         <div className="flex-1">
           <Line data={lineData} options={lineOptions} />
         </div>
-      </div>
+      </motion.div>
 
       {/* box-2 */}
       <div
@@ -164,7 +166,9 @@ export default function BottomGrid() {
       </div>
 
       {/* box-3 */}
-      <div
+      <motion.div
+        transition={{ ease: 'backInOut' }}
+        whileHover={{ scaleY: 1.2, scaleX: 1.2 }}
         className="box box-3 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-3' }}
       >
@@ -175,7 +179,7 @@ export default function BottomGrid() {
         <div className="flex-1">
           <Bar data={barData} options={barOptions} />
         </div>
-      </div>
+      </motion.div>
 
       {/* box-4 */}
       <div
