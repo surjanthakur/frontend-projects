@@ -1,3 +1,4 @@
+import './topbar.css'
 export default function Topbar() {
   return (
     <nav className="w-full h-16 sticky top-0 z-10 bg-white flex items-center justify-between p-4 shadow-lg! rounded-lg!">
@@ -6,7 +7,7 @@ export default function Topbar() {
         <h1 className="text-3xl! font-extralight! text-gray-800">Analytics</h1>
 
         <div className="flex items-center gap-2 text-sm text-gray-500 border border-gray-200 px-3 py-1 rounded-md">
-          <span>16.09.2025 - 20.09.2025</span>
+          <span className="text-gray-500!">16.09.2025 - 20.09.2025</span>
           <i className="fa-regular fa-calendar text-gray-400"></i>
         </div>
       </div>
@@ -15,12 +16,10 @@ export default function Topbar() {
       <div className="flex items-center gap-4">
         {/* Theme Toggle */}
         <div className="flex items-center bg-gray-100 rounded-full p-1">
-          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-white shadow text-yellow-400">
-            <i className="fa-solid fa-sun text-xs"></i>
-          </button>
-          <button className="w-7 h-7 flex items-center justify-center rounded-full text-gray-400 hover:text-black">
-            <i className="fa-solid fa-moon text-xs"></i>
-          </button>
+          <label className="switch">
+            <input type="checkbox" class="checkbox" />
+            <div className="slider"></div>
+          </label>
         </div>
 
         {/* USER */}
