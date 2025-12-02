@@ -9,6 +9,8 @@
 }
 
 .box {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.699);
   border-radius: 12px;
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.43);
 }
