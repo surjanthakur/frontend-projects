@@ -48,7 +48,7 @@ export default function TopGrid() {
         className="box box-1 flex flex-col justify-between p-5 rounded-xl"
         style={{ gridArea: 'box-1' }}
       >
-        <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-4xl!  font-light! flex items-start text-black">
           Orders
           <i className="fa-solid fa-address-card  ml-25"></i>
         </h1>
@@ -58,7 +58,9 @@ export default function TopGrid() {
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           8.2%
-          <span className="text-gray-500 ml-1">last month</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            last month
+          </span>
         </p>
       </div>
       {/* box 2 */}
@@ -66,7 +68,7 @@ export default function TopGrid() {
         className="box box-2 flex flex-col justify-between p-5 rounded-xl"
         style={{ gridArea: 'box-2' }}
       >
-        <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-4xl!    font-light! flex items-center gap-2 text-black">
           Approved
           <i class="fa-solid fa-arrow-trend-up ml-25"></i>
         </h1>
@@ -76,7 +78,9 @@ export default function TopGrid() {
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           3.2%
-          <span className="text-gray-500 ml-1">last month</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            last month
+          </span>
         </p>
       </div>
 
@@ -85,7 +89,7 @@ export default function TopGrid() {
         className="box box-3 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-3' }}
       >
-        <h1 className="text-2xl! font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-2xl! f  font-light! flex items-center gap-2 text-black">
           Users <i className="fa-solid fa-users ml-auto"></i>
         </h1>
 
@@ -106,7 +110,7 @@ export default function TopGrid() {
         className="box box-4 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-4' }}
       >
-        <h1 className="text-2xl! font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-2xl!   font-light! flex items-center gap-2 text-black">
           subscriptions <i class="fa-solid fa-indian-rupee-sign ml-auto"></i>
         </h1>
 
@@ -126,7 +130,7 @@ export default function TopGrid() {
         className="box box-5 flex flex-col justify-between p-5 rounded-xl"
         style={{ gridArea: 'box-5' }}
       >
-        <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-4xl!    font-light! flex items-center gap-2 text-black">
           Total
           <i class="fa-solid fa-dollar-sign ml-20"></i>
         </h1>
@@ -136,7 +140,9 @@ export default function TopGrid() {
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           3.2%
-          <span className="text-gray-500 ml-1">last month</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            last month
+          </span>
         </p>
       </div>
       {/* box-6 */}
@@ -144,7 +150,7 @@ export default function TopGrid() {
         className="box box-6 flex flex-col justify-between p-5 rounded-xl"
         style={{ gridArea: 'box-6' }}
       >
-        <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
+        <h1 className="text-4xl!    font-light! flex items-center gap-2 text-black">
           revenue
           <i className="fa-solid fa-address-card  ml-25"></i>
         </h1>
@@ -154,7 +160,9 @@ export default function TopGrid() {
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           3.2%
-          <span className="text-gray-500 ml-1">last month</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            last month
+          </span>
         </p>
       </div>
     </div>

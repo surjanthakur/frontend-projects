@@ -144,38 +144,42 @@ export default function BottomGrid() {
 
       {/* box-2 */}
       <div
-        className="box box-2 flex flex-col justify-between p-5 rounded-xl"
+        className="box box-2 flex flex-col justify-around p-5 rounded-xl"
         style={{ gridArea: 'box-2' }}
       >
         <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
           <i class="fa-solid fa-wallet"></i>
         </h1>
         <span className="text-gray-500 ml-1">paid invoices</span>
-        <h1 className="text-4xl! font-extrabold! text-gray-900 text-start my-4">
+        <h1 className="text-4xl! font-extrabold! text-gray-900 text-start">
           $ 23,4456
         </h1>
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           1.2%
-          <span className="text-gray-500 ml-1">current financial year</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            current financial year
+          </span>
         </p>
       </div>
       {/* box-3 */}
       <div
-        className="box box-3 flex flex-col justify-between p-5 rounded-xl"
+        className="box box-3 flex flex-col justify-around  p-5 rounded-xl"
         style={{ gridArea: 'box-3' }}
       >
         <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
           <i class="fa-solid fa-wallet"></i>
         </h1>
         <span className="text-gray-500 ml-1">fund received</span>
-        <h1 className="text-4xl! font-extrabold! text-gray-900 text-start my-4">
+        <h1 className="text-4xl! font-extrabold! text-gray-900 text-start">
           $ 28,0983
         </h1>
         <p className="text-green-500 text-lg! flex items-center gap-1">
           <i className="fa-solid fa-arrow-up"></i>
           3.2%
-          <span className="text-gray-500 ml-1">current financial year</span>
+          <span className="text-gray-500 ml-1 font-extralight text-sm">
+            current financial year
+          </span>
         </p>
       </div>
       {/* box-4 */}
