@@ -1,6 +1,6 @@
 export default function Topbar() {
   return (
-    <nav className="w-full h-16 sticky top-0 z-10 bg-white flex items-center justify-between px-6">
+    <nav className="w-full h-16 sticky top-0 z-10 bg-white flex items-center justify-between p-4 shadow-lg! rounded-lg!">
       {/* LEFT SIDE */}
       <div className="flex items-center gap-4">
         <h1 className="text-3xl font-bold  text-gray-800">Analytics</h1>

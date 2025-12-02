@@ -1,14 +1,14 @@
-import './sidebar.css'
 export default function Sidebar() {
   return (
     <div className="sidebar sticky top-0  shadow-2xl h-screen w-[260px] bg-white flex flex-col  px-6 py-8 border-r border-gray-200">
       {/* LOGO */}
       <h1 className="head text-gray-800 font-sans text-start">
-        <i class="fa-solid fa-layer-group"></i>&nbsp;Business
+        <i className="fa-solid fa-layer-group text-2xl!"></i>&nbsp; your
+        dashboard
       </h1>
 
       {/* MAIN MENU */}
-      <div className="flex flex-col font-bold gap-3 text-sm mt-30 text-gray-600">
+      <div className="flex flex-col font-bold gap-3 text-sm mt-20 text-gray-600">
         <SidebarItem icon="fa-globe" label="Analytics" active />
         <SidebarItem icon="fa-bag-shopping" label="Products" />
         <SidebarItem icon="fa-message" label="Messages" />

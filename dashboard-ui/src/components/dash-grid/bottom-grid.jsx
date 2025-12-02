@@ -162,30 +162,11 @@ export default function BottomGrid() {
           </span>
         </p>
       </div>
+
       {/* box-3 */}
       <div
-        className="box box-3 flex flex-col justify-around  p-5 rounded-xl"
+        className="box box-3 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-3' }}
-      >
-        <h1 className="text-4xl!  font-extrabold! flex items-center gap-2 text-black">
-          <i class="fa-solid fa-wallet"></i>
-        </h1>
-        <span className="text-gray-500 ml-1">fund received</span>
-        <h1 className="text-4xl! font-extrabold! text-gray-900 text-start">
-          $ 28,0983
-        </h1>
-        <p className="text-green-500 text-lg! flex items-center gap-1">
-          <i className="fa-solid fa-arrow-up"></i>
-          3.2%
-          <span className="text-gray-500 ml-1 font-extralight text-sm">
-            current financial year
-          </span>
-        </p>
-      </div>
-      {/* box-4 */}
-      <div
-        className="box box-4 flex flex-col p-5 rounded-xl"
-        style={{ gridArea: 'box-4' }}
       >
         <h1 className="text-xl! font-extrabold text-black mb-2">
           Overall Dynamics
@@ -196,10 +177,10 @@ export default function BottomGrid() {
         </div>
       </div>
 
-      {/* box-5 */}
+      {/* box-4 */}
       <div
-        className="box box-5 overflow-hidden rounded-xl shadow-md"
-        style={{ gridArea: 'box-5' }}
+        className="box box-4 overflow-hidden rounded-xl shadow-md"
+        style={{ gridArea: 'box-4' }}
       >
         <img
           src="https://i.pinimg.com/736x/00/38/53/00385325edb5535fb1918a34ec6a4650.jpg"
