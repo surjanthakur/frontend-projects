@@ -3,7 +3,7 @@ export default function Topbar() {
     <nav className="w-full h-16 sticky top-0 z-10 bg-white flex items-center justify-between p-4 shadow-lg! rounded-lg!">
       {/* LEFT SIDE */}
       <div className="flex items-center gap-4">
-        <h1 className="text-3xl font-bold  text-gray-800">Analytics</h1>
+        <h1 className="text-3xl! font-extralight! text-gray-800">Analytics</h1>
 
         <div className="flex items-center gap-2 text-sm text-gray-500 border border-gray-200 px-3 py-1 rounded-md">
           <span>16.09.2025 - 20.09.2025</span>
