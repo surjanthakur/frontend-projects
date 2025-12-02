@@ -18,7 +18,7 @@ export default function Sidebar() {
       {/* FOOTER */}
       <div className="flex flex-col gap-2 text-2xl font-bold mt-auto text-gray-600">
         <img
-          src="https://i.pinimg.com/1200x/3a/c1/ca/3ac1ca7e3767c18fa955fb19be639690.jpg"
+          src="https://i.pinimg.com/736x/a1/ab/f2/a1abf26afc39289d97012209eeffa55e.jpg"
           alt="image"
           className="w-100 h-10 rounded-lg  object-cover"
         ></img>
