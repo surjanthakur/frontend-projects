@@ -4,5 +4,5 @@
 }
 body {
   background-color: #ffffff;
-  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
