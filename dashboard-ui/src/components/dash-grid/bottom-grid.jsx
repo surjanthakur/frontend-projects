@@ -50,7 +50,7 @@ export default function BottomGrid() {
       }
     }
     fetchStocks()
-  }, [stocks])
+  }, [])
   const labels = [
     'Jan',
     'Feb',
@@ -174,11 +174,12 @@ export default function BottomGrid() {
 
       {/* box-2 */}
       <motion.div
-
         className="box box-2 p-4 rounded-xl overflow-auto"
         style={{ gridArea: 'box-2' }}
       >
-        <h1 className="text-lg font-bold mb-3">📊 Current Stock Prices</h1>
+        <h1 className="text-lg font-bold mb-3 underline">
+          💸 Current Stock Prices
+        </h1>
 
         <table className="w-full text-sm border-collapse">
           <thead>
@@ -194,7 +195,7 @@ export default function BottomGrid() {
           <tbody>
             {stocks.map((stock, i) => (
               <tr key={i} className="border-b hover:bg-gray-100 transition">
-                <td className="py-2 font-medium">{stock.Name}</td>
+                <td className="py-2 font-bold!">{stock.Name}</td>
                 <td className="py-2 text-right text-green-600">
                   {stock.CurrentPrice || '--'}
                 </td>
