@@ -3,34 +3,36 @@ import '../css/sidebar.css'
 export default function Sidebar() {
   return (
     <>
-      <div className="sidebar flex flex-col p-5 h-full w-4xl">
-        <h1 className="text-2xl! font-bold mt-5 text-center p-1">
+      <div className="sidebar">
+        <h1 className="text-3xl! font-bold mt-10! text-center p-1">
           Travigo&nbsp;
-          <i class="text-green-500 fa-solid fa-plane-departure"></i>
+          <i className="text-green-500 fa-solid fa-plane-departure"></i>
         </h1>
-        <div className="routes">
-          <button>
-            <i class="fa-regular fa-house"></i>&nbsp;Dashboard
+        <div className="routes flex flex-col! mt-20! gap-5 text-1xl!">
+          <button className="dashboard">
+            <i className=" fa-regular fa-house"></i>&nbsp;Dashboard
           </button>
-          <button>
-            <i class="fa-solid fa-ticket"></i>&nbsp;My Tickets
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-solid fa-ticket"></i>&nbsp;My Tickets
           </button>
-          <button>
-            <i class="fa-solid fa-crown"></i>&nbsp;Favourite
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-solid fa-crown"></i>&nbsp;Favourite
           </button>
-          <button>
-            <i class="fa-regular fa-comment-dots"></i>&nbsp;Messages
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-regular fa-comment-dots"></i>&nbsp;Messages
           </button>
-          <button>
-            <i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;Transaction
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-solid fa-circle-dollar-to-slot"></i>
+            &nbsp;Transaction
           </button>
-          <button>
-            <i class="fa-solid fa-gear"></i>&nbsp;Settings
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-solid fa-gear"></i>&nbsp;Settings
           </button>
         </div>
-        <div className="bottom">
-          <button>
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;Log out
+        <div className="bottom text-2xl! flex flex-col! text-center  mt-auto! mb-5!">
+          <button className="hover:bg-amber-50 h-15 rounded-3xl ">
+            <i className="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;Log
+            out
           </button>
         </div>
       </div>
