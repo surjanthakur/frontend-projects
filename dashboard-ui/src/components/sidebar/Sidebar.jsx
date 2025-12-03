@@ -20,7 +20,7 @@ export default function Sidebar() {
         <img
           src="https://i.pinimg.com/736x/a1/ab/f2/a1abf26afc39289d97012209eeffa55e.jpg"
           alt="image"
-          className="w-100 h-10 rounded-lg  object-cover"
+          className="w-100 h-10 rounded-lg  object-cover transition-transform duration-500 hover:scale-105"
         ></img>
         <SidebarItem icon="fa-gear" label="Settings" />
         <SidebarItem

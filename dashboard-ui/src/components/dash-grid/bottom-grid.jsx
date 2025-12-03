@@ -1,3 +1,4 @@
+import axios from 'axios'
 import {
   BarElement,
   CategoryScale,
@@ -9,6 +10,7 @@ import {
   Tooltip,
 } from 'chart.js'
 import { motion } from 'motion/react'
+import { useEffect, useState } from 'react'
 import { Bar, Line } from 'react-chartjs-2'
 import './bottomgrid.css'
 
@@ -22,7 +24,33 @@ ChartJS.register(
   Legend
 )
 
+const options = {
+  method: 'GET',
+  url: 'https://api.freeapi.app/api/v1/public/stocks',
+  params: {
+    page: '1',
+    limit: '15',
+    inc: 'Name,MarketCap,CurrentPrice,BookValue,HighLow',
+    query: 'tata',
+  },
+  headers: { accept: 'application/json' },
+}
+
 export default function BottomGrid() {
+  const [stocks, setStocks] = useState([])
+
+  useEffect(() => {
+    const fetchStocks = async () => {
+      try {
+        const { data } = await axios.request(options)
+        setStocks(data.data.data)
+        console.log(data.data.data)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+    fetchStocks()
+  }, [stocks])
   const labels = [
     'Jan',
     'Feb',
@@ -132,7 +160,7 @@ export default function BottomGrid() {
       {/* box-1 */}
       <motion.div
         transition={{ ease: 'backInOut' }}
-        whileHover={{ scaleY: 1.2, scaleX: 1.2 }}
+        whileHover={{ scaleY: 1.1, scaleX: 1.1 }}
         className="box box-1 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-1' }}
       >
@@ -145,16 +173,46 @@ export default function BottomGrid() {
       </motion.div>
 
       {/* box-2 */}
-      <div className="box box-2 p-5 rounded-xl" style={{ gridArea: 'box-2' }}>
-        <h1 className="text-1xl! font-extralight! underline">
-          current stocks prize 💸
-        </h1>
-      </div>
+      <motion.div
+
+        className="box box-2 p-4 rounded-xl overflow-auto"
+        style={{ gridArea: 'box-2' }}
+      >
+        <h1 className="text-lg font-bold mb-3">📊 Current Stock Prices</h1>
+
+        <table className="w-full text-sm border-collapse">
+          <thead>
+            <tr className="border-b">
+              <th className="text-left py-2">Company</th>
+              <th className="text-right py-2">Price</th>
+              <th className="text-right py-2">Market Cap</th>
+              <th className="text-right py-2">Book Value</th>
+              <th className="text-center py-2">High / Low</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {stocks.map((stock, i) => (
+              <tr key={i} className="border-b hover:bg-gray-100 transition">
+                <td className="py-2 font-medium">{stock.Name}</td>
+                <td className="py-2 text-right text-green-600">
+                  {stock.CurrentPrice || '--'}
+                </td>
+                <td className="py-2 text-right">{stock.MarketCap}</td>
+                <td className="py-2 text-right text-blue-600">
+                  {stock.BookValue || '--'}
+                </td>
+                <td className="py-2 text-center">{stock.HighLow || '--'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </motion.div>
 
       {/* box-3 */}
       <motion.div
         transition={{ ease: 'backInOut' }}
-        whileHover={{ scaleY: 1.2, scaleX: 1.2 }}
+        whileHover={{ scaleY: 1.1, scaleX: 1.1 }}
         className="box box-3 flex flex-col p-5 rounded-xl"
         style={{ gridArea: 'box-3' }}
       >
