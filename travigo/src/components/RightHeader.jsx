@@ -23,7 +23,7 @@ export default function RightHeader() {
         </div>
 
         <div className="flex mt-6! p-2!">
-          <i class="fa-solid fa-bell  text-red-500"></i>
+          <i className="fa-solid fa-bell  text-red-500"></i>
           <img
             src="https://i.pravatar.cc/40"
             alt="avatar"

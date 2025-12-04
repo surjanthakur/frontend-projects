@@ -30,7 +30,7 @@ export default function RightTopSection() {
       <div className="top-section  ">
         {/* card */}
         {mountainData.map((card, i) => (
-          <div className="mountain-card">
+          <div className="mountain-card" key={i}>
             <motion.img
               transition={{ ease: 'anticipate' }}
               whileHover={{ scale: 1.1 }}
@@ -40,7 +40,7 @@ export default function RightTopSection() {
             <div className="card-overlay">
               <h1>{card.name}</h1>
               <p>
-                <span class="card-info">
+                <span className="card-info">
                   <i className="fa-solid fa-location-dot"></i>
                   {card.location}
                 </span>
@@ -53,14 +53,14 @@ export default function RightTopSection() {
           </div>
         ))}
         {/* metting card */}
-        <div class="meeting-card">
-          <div class="header">
-            <div class="title">
+        <div className="meeting-card">
+          <div className="header">
+            <div className="title">
               Upcoming
               <br />
               Meetings
             </div>
-            <div class="date-selector" id="month-selector">
+            <div className="date-selector" id="month-selector">
               <span>December</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ export default function RightTopSection() {
             </div>
           </div>
 
-          <div class="calls-info">
+          <div className="calls-info">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -90,42 +90,42 @@ export default function RightTopSection() {
             <span>3 calls • Thu, 11</span>
           </div>
 
-          <div class="date-nav-and-indicators">
-            <div class="date-nav-container">
-              <div class="day-item">
-                <div class="day-number">8</div>
-                <div class="day-name">Mon</div>
+          <div className="date-nav-and-indicators">
+            <div className="date-nav-container">
+              <div className="day-item">
+                <div className="day-number">8</div>
+                <div className="day-name">Mon</div>
               </div>
-              <div class="day-item">
-                <div class="day-number">9</div>
-                <div class="day-name">Tue</div>
+              <div className="day-item">
+                <div className="day-number">9</div>
+                <div className="day-name">Tue</div>
               </div>
-              <div class="day-item">
-                <div class="day-number">10</div>
-                <div class="day-name">Wed</div>
+              <div className="day-item">
+                <div className="day-number">10</div>
+                <div className="day-name">Wed</div>
               </div>
-              <div class="day-item day-active">
-                <div class="day-number">11</div>
-                <div class="day-name">Thu</div>
+              <div className="day-item day-active">
+                <div className="day-number">11</div>
+                <div className="day-name">Thu</div>
               </div>
-              <div class="day-item">
-                <div class="day-number">12</div>
-                <div class="day-name">Fri</div>
+              <div className="day-item">
+                <div className="day-number">12</div>
+                <div className="day-name">Fri</div>
               </div>
-              <div class="day-item">
-                <div class="day-number">13</div>
-                <div class="day-name">Sat</div>
+              <div className="day-item">
+                <div className="day-number">13</div>
+                <div className="day-name">Sat</div>
               </div>
             </div>
 
-            <div class="indicator-container">
-              <div class="indicator-line"></div>
-              <div class="indicator-dot"></div>
-              <div class="indicator-dot"></div>
-              <div class="indicator-dot"></div>
-              <div class="indicator-dot indicator-active"></div>
-              <div class="indicator-dot"></div>
-              <div class="indicator-dot"></div>
+            <div className="indicator-container">
+              <div className="indicator-line"></div>
+              <div className="indicator-dot"></div>
+              <div className="indicator-dot"></div>
+              <div className="indicator-dot"></div>
+              <div className="indicator-dot indicator-active"></div>
+              <div className="indicator-dot"></div>
+              <div className="indicator-dot"></div>
             </div>
           </div>
         </div>
