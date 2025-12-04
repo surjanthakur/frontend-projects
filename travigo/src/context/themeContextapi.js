@@ -8,6 +8,6 @@ const ThemeContext = createContext({
 
 export const ThemeProvider = ThemeContext.Provider
 
-export default function useTheme() {
+export function useTheme() {
   return useContext(ThemeContext)
 }

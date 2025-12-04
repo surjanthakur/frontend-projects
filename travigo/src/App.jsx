@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import RightBottomSection from './components/RightBottomSection'
 import RightHeader from './components/RightHeader'
@@ -12,15 +12,18 @@ export default function App() {
   // set light mode
   const lightTheme = () => {
     setThemeMode('light')
+    localStorage.setItem('themeMode', 'light')
   }
 
   // set dark mode
   const darkTheme = () => {
     setThemeMode('dark')
+    localStorage.setItem('themeMode', 'dark')
   }
 
   useEffect(() => {
     document.querySelector('html').classList.remove('light', 'dark')
+
     document.querySelector('html').classList.add(themeMode)
   }, [themeMode])
 

@@ -3,7 +3,7 @@ import '../css/sidebar.css'
 export default function Sidebar() {
   return (
     <>
-      <div className="sidebar shadow-lg">
+      <div className="sidebar shadow-lg dark:bg-gray-800 dark:text-white">
         <h1 className="+ text-3xl font-bold mt-10! text-center p-1">
           Travigo&nbsp;
           <i className="text-[#1cc889] fa-solid fa-plane-departure"></i>

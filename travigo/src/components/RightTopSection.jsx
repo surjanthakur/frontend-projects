@@ -27,7 +27,7 @@ export default function RightTopSection() {
   ]
   return (
     <>
-      <div className="top-section  ">
+      <div className="top-section dark:bg-black text-white ">
         {/* card */}
         {mountainData.map((card, i) => (
           <div className="mountain-card" key={i}>
@@ -38,14 +38,14 @@ export default function RightTopSection() {
               alt="mountain-image"
             />
             <div className="card-overlay">
-              <h1>{card.name}</h1>
+              <h1 className="dark:text-white">{card.name}</h1>
               <p>
-                <span className="card-info">
-                  <i className="fa-solid fa-location-dot"></i>
+                <span className="card-info dark:text-white">
+                  <i className="fa-solid fa-location-dot dark:text-white"></i>
                   {card.location}
                 </span>
-                <span className="card-info">
-                  <i className="fa-regular fa-star "></i>
+                <span className="card-info dark:text-white">
+                  <i className="fa-regular fa-star dark: text-white "></i>
                   {card.rating}
                 </span>
               </p>
@@ -53,16 +53,17 @@ export default function RightTopSection() {
           </div>
         ))}
         {/* metting card */}
-        <div className="meeting-card">
-          <div className="header">
+        <div className=" text-black bg-[#e9eeea] meeting-card dark:bg-black dark:text-white ">
+          <div className="header ">
             <div className="title">
               Upcoming
               <br />
               Meetings
             </div>
             <div className="date-selector" id="month-selector">
-              <span>December</span>
+              <span className="dark:text-black">December</span>
               <svg
+                className="dark:text-black"
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
@@ -90,7 +91,7 @@ export default function RightTopSection() {
             <span>3 calls • Thu, 11</span>
           </div>
 
-          <div className="date-nav-and-indicators">
+          <div className="date-nav-and-indicators dark:text-black">
             <div className="date-nav-container">
               <div className="day-item">
                 <div className="day-number">8</div>

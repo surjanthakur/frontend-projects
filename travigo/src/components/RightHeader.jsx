@@ -1,19 +1,36 @@
+import { useTheme } from '../context/themeContextapi'
 import '../css/header.css'
 
 export default function RightHeader() {
+  const { themeMode, lightTheme, darkTheme } = useTheme()
+
+  // set theme
+  const handelChangeTheme = (e) => {
+    const darkStatus = e.currentTarget.checked
+    if (darkStatus) {
+      darkTheme()
+    } else {
+      lightTheme()
+    }
+  }
   return (
     <>
-      <nav className="sticky top-0 z-20 flex align-middle  justify-between w-full h-25 rounded-lg shadow-lg! bg-white p-2!">
+      <nav className=" sticky top-0 z-20 flex align-middle  justify-between w-full h-25  shadow-lg! bg-white p-2!  dark:bg-gray-800 dark:text-white">
         <div className="flex flex-col p-2!  ">
           {/* theme change switch */}
           <label className="switch">
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              value=""
+              onChange={handelChangeTheme}
+              checked={themeMode === 'dark'}
+            />
             <span className="slider"></span>
           </label>
-          <h1 className="text-2xl! font-bold text-start text-black">
+          <h1 className="text-2xl! font-bold text-start text-black dark:text-white">
             hello Jerry! 👋🏻
           </h1>
-          <p className="text-sm! font-extralight! text-start text-gray-400">
+          <p className="text-sm! font-extralight! text-start text-gray-400 dark:text-white">
             welcome back and explore the world.
           </p>
         </div>
@@ -22,9 +39,9 @@ export default function RightHeader() {
           <input
             type="text"
             placeholder="Search Destination"
-            className="w-full h-14 pl-10 pr-4 rounded-4xl  shadow-md text-center"
+            className="w-full h-14 pl-10 pr-4 rounded-4xl  shadow-md text-center dark:text-white"
           />
-          <button className="w-30 h-14 bg-[#1cc889] rounded-4xl ms-2!">
+          <button className="w-33 h-12 bg-[#1cc889] rounded-4xl ms-2! dark:text-white">
             search
           </button>
         </div>
@@ -36,7 +53,7 @@ export default function RightHeader() {
             alt="avatar"
             className="w-10 h-10 rounded-full object-cover mr-2!"
           ></img>
-          <h1 className="text-lg! font-extralight text-gray-600">
+          <h1 className="text-lg! font-extralight text-gray-600 dark:text-white">
             @Jerry Traveller
           </h1>
         </div>

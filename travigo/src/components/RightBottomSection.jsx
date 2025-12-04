@@ -54,7 +54,7 @@ export default function RightBottomSection() {
   ]
 
   return (
-    <div className="flex gap-6 p-8! bg-gray-50 rounded-2xl!">
+    <div className="flex gap-6 p-8! bg-gray-50  dark:bg-black dark:text-white">
       {/* Left Section - Destinations */}
       <div className="flex-1 bg-white rounded-3xl p-8! shadow-sm">
         <div className="flex items-center justify-between mb-6">
@@ -65,8 +65,8 @@ export default function RightBottomSection() {
             <p className="text-gray-400">100 Destination found</p>
           </div>
           <button className="flex items-center gap-2 p-4! border-2 border-gray-200 rounded-full hover:bg-gray-50 transition">
-            <Filter size={20} />
-            <span className="font-medium">Filters</span>
+            <Filter size={20} className="dark:text-black" />
+            <span className="font-medium dark:text-black">Filters</span>
           </button>
         </div>
 
