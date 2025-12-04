@@ -31,7 +31,7 @@ export default function App() {
     <>
       <ThemeProvider value={{ lightTheme, darkTheme, themeMode }}>
         <div className="main-grid">
-          <div className="left-grid">
+          <div className="left-grid ">
             <Sidebar />
           </div>
           <div className="right-grid">

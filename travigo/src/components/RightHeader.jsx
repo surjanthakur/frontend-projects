@@ -15,7 +15,7 @@ export default function RightHeader() {
   }
   return (
     <>
-      <nav className=" sticky top-0 z-20 flex align-middle  justify-between w-full h-25  shadow-lg! bg-white p-2!  dark:bg-gray-800 dark:text-white">
+      <nav className=" sticky top-0 z-20 flex align-middle   justify-between w-full h-25  shadow-lg! bg-white p-2!  dark:bg-gray-800 dark:text-white">
         <div className="flex flex-col p-2!  ">
           {/* theme change switch */}
           <label className="switch">
