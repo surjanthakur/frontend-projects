@@ -1,8 +1,15 @@
+import '../css/header.css'
+
 export default function RightHeader() {
   return (
     <>
       <nav className="sticky top-0 z-20 flex align-middle  justify-between w-full h-25 rounded-lg shadow-lg! bg-white p-2!">
-        <div className="flex flex-col mt-2! p-3!  ">
+        <div className="flex flex-col p-2!  ">
+          {/* theme change switch */}
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider"></span>
+          </label>
           <h1 className="text-2xl! font-bold text-start text-black">
             hello Jerry! 👋🏻
           </h1>
