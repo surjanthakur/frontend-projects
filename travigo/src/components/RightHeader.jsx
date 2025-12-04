@@ -1,7 +1,7 @@
 export default function RightHeader() {
   return (
     <>
-      <nav className="flex align-middle  justify-between w-full h-25 rounded-lg shadow-lg! bg-white p-2!">
+      <nav className="sticky top-0 z-20 flex align-middle  justify-between w-full h-25 rounded-lg shadow-lg! bg-white p-2!">
         <div className="flex flex-col mt-2! p-3!  ">
           <h1 className="text-2xl! font-bold text-start text-black">
             hello Jerry! 👋🏻
@@ -11,12 +11,15 @@ export default function RightHeader() {
           </p>
         </div>
         {/* search bar */}
-        <div className="relative mt-2! w-full max-w-sm">
+        <div className=" mt-3! w-100 flex">
           <input
             type="text"
             placeholder="Search Destination"
-            className="w-full h-16 pl-10 pr-4 rounded-xl  shadow-md text-center  bg-gray-100"
+            className="w-full h-14 pl-10 pr-4 rounded-4xl  shadow-md text-center"
           />
+          <button className="w-30 h-14 bg-[#1cc889] rounded-4xl ms-2!">
+            search
+          </button>
         </div>
 
         <div className="flex mt-6! p-2!">
