@@ -3,10 +3,10 @@ export default function RightHeader() {
     <>
       <nav className="flex align-middle  justify-between w-full h-25 rounded-lg shadow-lg! bg-white p-2!">
         <div className="flex flex-col mt-2! p-3!  ">
-          <h1 className="text-2xl! font-bold text-center text-black">
+          <h1 className="text-2xl! font-bold text-start text-black">
             hello Jerry! 👋🏻
           </h1>
-          <p className="text-sm! font-extralight! text-gray-400">
+          <p className="text-sm! font-extralight! text-start text-gray-400">
             welcome back and explore the world.
           </p>
         </div>
@@ -24,10 +24,10 @@ export default function RightHeader() {
           <img
             src="https://i.pravatar.cc/40"
             alt="avatar"
-            className="w-10 h-10 rounded-full object-cover mr-6!"
+            className="w-10 h-10 rounded-full object-cover mr-2!"
           ></img>
           <h1 className="text-lg! font-extralight text-gray-600">
-            Jerry Traveller
+            @Jerry Traveller
           </h1>
         </div>
       </nav>
