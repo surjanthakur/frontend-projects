@@ -12,20 +12,20 @@ export default function Sidebar() {
           <button className="dashboard">
             <i className=" fa-regular fa-house"></i>&nbsp;Dashboard
           </button>
-          <button className="hover:bg-[#eae9e9] h-16 rounded-3xl ">
+          <button className="hover:underline h-16 rounded-3xl ">
             <i className="fa-solid fa-ticket"></i>&nbsp;My Tickets
           </button>
-          <button className="hover:bg-[#eae9e9] h-16 rounded-3xl ">
+          <button className="hover:underline h-16 rounded-3xl ">
             <i className="fa-solid fa-crown"></i>&nbsp;Favourite
           </button>
-          <button className="hover:bg-[#eae9e9] h-16 rounded-3xl ">
+          <button className="hover:underline h-16 rounded-3xl ">
             <i className="fa-regular fa-comment-dots"></i>&nbsp;Messages
           </button>
-          <button className="hover:bg-[#eae9e9] h-16 rounded-3xl ">
+          <button className="hover:underline h-16 rounded-3xl ">
             <i className="fa-solid fa-circle-dollar-to-slot"></i>
             &nbsp;Transaction
           </button>
-          <button className="hover:bg-[#eae9e9] h-16 rounded-3xl ">
+          <button className="hover:underline h-16 rounded-3xl ">
             <i className="fa-solid fa-gear"></i>&nbsp;Settings
           </button>
         </div>

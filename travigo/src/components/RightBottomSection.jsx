@@ -1,4 +1,5 @@
 import { Calendar, Filter, MapPin, Star } from 'lucide-react'
+import { motion } from 'motion/react'
 
 export default function RightBottomSection() {
   const destinations = [
@@ -71,9 +72,11 @@ export default function RightBottomSection() {
 
         <div className="mt-3!">
           {destinations.map((dest) => (
-            <div
+            <motion.div
+              transition={{ ease: 'anticipate' }}
+              whileHover={{ y: -10 }}
               key={dest.id}
-              className="flex items-center justify-between p-4! hover:bg-gray-50 rounded-2xl transition cursor-pointer"
+              className="flex items-center justify-between p-4! hover:bg-gray-50 shadow-lg rounded-2xl transition cursor-pointer"
             >
               <div className="flex items-center gap-4">
                 <div className="w-20 h-20 bg-linear-to-br from-emerald-200 to-teal-300 rounded-2xl flex items-center justify-center text-4xl">
@@ -106,7 +109,7 @@ export default function RightBottomSection() {
                   </span>
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -122,9 +125,12 @@ export default function RightBottomSection() {
           The Beauty
         </h2>
         <p className="text-gray-400 mb-8!">Get special offers & news</p>
-        <button className="w-50 h-16 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-4 rounded-4xl! transition shadow-lg">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="w-50 h-16 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-4 rounded-4xl! transition shadow-lg"
+        >
           Join Now
-        </button>
+        </motion.button>
       </div>
 
       {/* Right Section - Schedule */}
@@ -142,9 +148,11 @@ export default function RightBottomSection() {
 
         <div className="mt-4!">
           {schedules.map((schedule) => (
-            <div
+            <motion.div
+              transition={{ ease: 'backInOut' }}
+              whileHover={{ y: -10 }}
               key={schedule.id}
-              className="flex items-center gap-4 p-4! hover:bg-gray-50 rounded-2xl transition cursor-pointer"
+              className="flex items-center gap-4 p-4! hover:bg-gray-50 shadow-lg rounded-2xl transition cursor-pointer"
             >
               <div className="w-20 h-20 bg-linear-to-br from-emerald-200 to-teal-300 rounded-2xl flex items-center justify-center text-3xl">
                 {schedule.image}
@@ -168,7 +176,7 @@ export default function RightBottomSection() {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
