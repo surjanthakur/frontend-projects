@@ -1,0 +1,53 @@
+.top-section {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.mountain-card {
+  position: relative;
+  width: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mountain-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  filter: blur(1px) brightness(1);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-overlay h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card-overlay p {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-info i {
+  font-size: 14px;
+}

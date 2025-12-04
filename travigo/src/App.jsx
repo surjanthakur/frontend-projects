@@ -1,5 +1,6 @@
 import './App.css'
 import RightHeader from './components/RightHeader'
+import RightTopSection from './components/RightTopSection'
 import Sidebar from './components/Sidebar'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         </div>
         <div className="right-grid">
           <RightHeader />
+          <RightTopSection />
         </div>
       </div>
     </>
