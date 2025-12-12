@@ -1,4 +1,5 @@
 import './heropage.css'
+import HeroImagesSlider from './imageSlider'
 export default function HeroPage() {
   const cards = [
     {
@@ -34,8 +35,10 @@ export default function HeroPage() {
         </button>
       </div>
 
-      {/* IMAGE CARDS */}
-      <div className="hero-images">{/* leave this empty as requested */}</div>
+      {/* IMAGES SLIDER*/}
+      <div className="hero-images">
+        <HeroImagesSlider />
+      </div>
 
       {/* FEATURE CARDS */}
       <div className="features-card">

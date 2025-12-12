@@ -1,0 +1,93 @@
+/* container for perspective */
+.hero-images-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem; /* adjust as needed */
+  perspective: 1400px; /* controls depth */
+  -webkit-perspective: 1400px;
+}
+
+/* swiper slide sizing */
+.hero-swiper {
+  width: 100%;
+  max-width: 1100px; /* change to fit your hero width */
+  padding: 2rem 1rem;
+}
+
+/* make slides auto width so center works nicely */
+.hero-slide {
+  width: 210px; /* base width of the card; adjust */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card outer: gives the angled shape using clip-path */
+.card-outer {
+  width: 200px;
+  height: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.18);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.02)
+  );
+  /* angled side using clip-path polygon */
+  clip-path: polygon(
+    8% 0,
+    92% 0,
+    100% 10%,
+    100% 90%,
+    92% 100%,
+    8% 100%,
+    0 90%,
+    0 10%
+  );
+  transform: rotateY(-12deg) translateY(8px) scale(0.96);
+}
+
+/* inner card for smoothing and hover scale */
+.card-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* image styling */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 450ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+/* active center slide styles
+   Swiper adds class 'swiper-slide-active' to the center slide */
+.hero-slide.swiper-slide-active .card-outer {
+  transform: rotateY(0deg) translateY(0) scale(1.02);
+  box-shadow: 0 20px 36px rgba(16, 24, 40, 0.28);
+}
+
+/* slight hover lift */
+.card-outer:hover {
+  transform: rotateY(0deg) scale(1.04);
+}
+.card-outer:hover .card-image {
+  transform: scale(1.06);
+}
+
+/* navigation arrows little style tuning (optional) */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #ecedef;
+  opacity: 0.9;
+  top: 50%;
+  transform: translateY(-50%);
+}
