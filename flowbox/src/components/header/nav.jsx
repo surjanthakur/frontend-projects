@@ -15,8 +15,8 @@ export default function Nav() {
   ]
 
   return (
-    <header>
-      <nav className="nav-container">
+    <header className="shadow-lg sticky z-30 top-0  left-0">
+      <nav className="nav-container ">
         <div className="nav-left">
           {routes.map((route) => (
             <NavLink key={route.name} to={route.path} className="nav-link">
