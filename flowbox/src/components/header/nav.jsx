@@ -1,57 +1,45 @@
 import { NavLink } from 'react-router-dom'
 import './nav.css'
+
 export default function Nav() {
   const routes = [
-    {
-      name: 'Services',
-      path: '/services',
-    },
-    {
-      name: 'Features',
-      path: '/features',
-    },
-    {
-      name: 'Blog',
-      path: '/blog',
-    },
+    { name: 'Services', path: '/services' },
+    { name: 'Features', path: '/features' },
+    { name: 'Blog', path: '/blog' },
   ]
 
   const routes2 = [
-    {
-      name: 'About',
-      path: '/about',
-    },
-    {
-      name: 'Pricing',
-      path: '/pricing',
-    },
-    {
-      name: 'Contact',
-      path: '/contact',
-    },
+    { name: 'About', path: '/about' },
+    { name: 'Pricing', path: '/pricing' },
+    { name: 'Contact', path: '/contact' },
   ]
+
   return (
     <header>
-      <nav className="w-full h-40 p-4 sticky top-0 left-0 z-40 ">
-        {/* box-1 */}
-        <div className="box-1">
+      <nav className="nav-container">
+        <div className="nav-left">
           {routes.map((route) => (
-            <NavLink key={route.name} to={route.path}>
+            <NavLink key={route.name} to={route.path} className="nav-link">
               {route.name}
             </NavLink>
           ))}
         </div>
-        {/* box-2 */}
-        <div className="box-2">
-          <h1>Flowblox</h1>
+
+        <div className="nav-center">
+          <h1 className="logo">Flowblox</h1>
         </div>
-        {/* box-3 */}
-        <div className="box-3">
+
+        <div className="nav-right">
           {routes2.map((route) => (
-            <NavLink key={route.name} to={route.path}>
+            <NavLink key={route.name} to={route.path} className="nav-link">
               {route.name}
             </NavLink>
           ))}
+
+          <button className="cta-btn">
+            Get Started&nbsp;
+            <i className="fa-solid fa-angles-right"></i>
+          </button>
         </div>
       </nav>
     </header>
