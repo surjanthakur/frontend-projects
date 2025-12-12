@@ -49,6 +49,17 @@ export default function HeroPage() {
           </div>
         ))}
       </div>
+      <div className="hero-heading mt-10!">
+        <h1 className="line1">Work Smarter 🧠</h1>
+        <h1 className="line2">Everything Your team needs to.</h1>
+        <p className="sub1">All-in-one platform to plan, collaborate,</p>
+        <p className="sub2">and deliver — faster and smarter.</p>
+
+        <button className="cta">
+          View plans&nbsp;
+          <i className="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
     </section>
   )
 }
