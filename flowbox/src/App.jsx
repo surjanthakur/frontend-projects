@@ -1,9 +1,10 @@
 import './App.css'
-import { Nav } from './components/index'
+import { Nav, HeroPage } from './components/index'
 function App() {
   return (
     <>
       <Nav />
+      <HeroPage />
     </>
   )
 }

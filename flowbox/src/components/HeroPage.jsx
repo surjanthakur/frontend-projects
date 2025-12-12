@@ -28,7 +28,10 @@ export default function HeroPage() {
         <p className="sub1">All-in-one platform to plan, collaborate,</p>
         <p className="sub2">and deliver — faster and smarter.</p>
 
-        <button className="cta">Get started for Free →</button>
+        <button className="cta">
+          Get started for Free&nbsp;
+          <i className="fa-solid fa-angles-right"></i>
+        </button>
       </div>
 
       {/* IMAGE CARDS */}

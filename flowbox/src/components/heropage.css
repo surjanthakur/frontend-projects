@@ -46,10 +46,9 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.hero-heading .cta:hover {
-  opacity: 0.85;
+  &:hover {
+    background-color: #000000a6;
+  }
 }
 
 /* ---------------- FEATURE CARDS ---------------- */
