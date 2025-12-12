@@ -1,5 +1,6 @@
 import Nav from './header/nav'
-import Footer from './footer/footer'
 import HeroPage from './HeroPage'
+import GridLayout from './GridLayout'
+import Footer from './footer/footer'
 
-export { Nav, Footer, HeroPage }
+export { Nav, HeroPage, GridLayout, Footer }

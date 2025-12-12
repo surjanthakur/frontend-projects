@@ -1,10 +1,12 @@
 import './App.css'
-import { Nav, HeroPage } from './components/index'
+import { Nav, HeroPage, GridLayout, Footer } from './components/index'
 function App() {
   return (
     <>
       <Nav />
       <HeroPage />
+      <GridLayout />
+      <Footer />
     </>
   )
 }
