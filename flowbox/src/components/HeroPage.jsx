@@ -1,5 +1,7 @@
 import './css/heropage.css'
 import HeroImagesSlider from './imageSlider'
+import { motion } from 'framer-motion'
+
 export default function HeroPage() {
   const cards = [
     {
@@ -22,44 +24,153 @@ export default function HeroPage() {
   return (
     <section className="hero">
       {/* HERO HEADING */}
-      <div className="hero-heading">
-        <h1 className="line1">Streamline Your Team,</h1>
-        <h1 className="line2">Supercharge Your Workflow</h1>
+      <motion.div
+        className="hero-heading"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <motion.h1
+          className="line1"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          Streamline Your Team,
+        </motion.h1>
 
-        <p className="sub1">All-in-one platform to plan, collaborate,</p>
-        <p className="sub2">and deliver — faster and smarter.</p>
+        <motion.h1
+          className="line2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Supercharge Your Workflow
+        </motion.h1>
 
-        <button className="cta">
+        <motion.p
+          className="sub1"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          All-in-one platform to plan, collaborate,
+        </motion.p>
+
+        <motion.p
+          className="sub2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          viewport={{ once: true }}
+        >
+          and deliver — faster and smarter.
+        </motion.p>
+
+        <motion.button
+          className="cta"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          viewport={{ once: true }}
+        >
           Get started for Free&nbsp;
           <i className="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
 
-      {/* IMAGES SLIDER*/}
-      <div className="hero-images">
+      {/* IMAGES SLIDER */}
+      <motion.div
+        className="hero-images"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <HeroImagesSlider />
-      </div>
+      </motion.div>
 
       {/* FEATURE CARDS */}
       <div className="features-card">
         {cards.map((card, idx) => (
-          <div key={idx} className="feature-item">
+          <motion.div
+            key={idx}
+            className="feature-item"
+            initial={{ opacity: 0, y: 40 }}
+            whileHover={{ scale: 1.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2>{card.title}</h2>
             <p>{card.content}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className="hero-heading mt-10!">
-        <h1 className="line1">Work Smarter 🧠</h1>
-        <h1 className="line2">Everything Your team needs to.</h1>
-        <p className="sub1">All-in-one platform to plan, collaborate,</p>
-        <p className="sub2">and deliver — faster and smarter.</p>
 
-        <button className="cta">
+      {/* SECOND HEADING BLOCK */}
+      <motion.div
+        className="hero-heading mt-10!"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <motion.h1
+          className="line1"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          Work Smarter 🧠
+        </motion.h1>
+
+        <motion.h1
+          className="line2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Everything Your team needs to.
+        </motion.h1>
+
+        <motion.p
+          className="sub1"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          All-in-one platform to plan, collaborate,
+        </motion.p>
+
+        <motion.p
+          className="sub2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          viewport={{ once: true }}
+        >
+          and deliver — faster and smarter.
+        </motion.p>
+
+        <motion.button
+          className="cta"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          viewport={{ once: true }}
+        >
           View plans&nbsp;
           <i className="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
     </section>
   )
 }
