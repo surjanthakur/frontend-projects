@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import './imageSlider.css'
+import './css/imageSlider.css'
 
 const images = [
   'https://i.pinimg.com/736x/db/cc/ce/dbccce4821c25a912ca1dfd2250604e8.jpg',

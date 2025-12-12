@@ -1,4 +1,4 @@
-import './heropage.css'
+import './css/heropage.css'
 import HeroImagesSlider from './imageSlider'
 export default function HeroPage() {
   const cards = [
