@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './nav.css'
-export default function nav() {
+export default function Nav() {
   const routes = [
     {
       name: 'Services',
