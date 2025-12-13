@@ -12,7 +12,7 @@ export default function SideBar() {
 
       {/* ROUTES */}
       <div className="flex flex-col items-center gap-8 text-gray-400 text-xl">
-        <i className="fa-solid fa-atom hover:scale-110  transition"></i>
+        <i className="fa-solid fa-atom hover:scale-110 transition"></i>
         <i className="fa-solid fa-bag-shopping hover:scale-110 transition"></i>
         <i className="fa-regular fa-envelope hover:scale-110 transition"></i>
         <i className="fa-solid fa-users-line hover:scale-110 transition"></i>
