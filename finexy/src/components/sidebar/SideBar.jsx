@@ -1,6 +1,6 @@
 export default function SideBar() {
   return (
-    <div className="flex h-screen w-20 shadow-lg flex-col items-center justify-around bg-white text-black transition-colors duration-300 ">
+    <div className="flex h-screen mt-4! w-20 absolute top-0 left-0 z-40 flex-col items-center justify-around text-black transition-colors duration-300 ">
       {/* THEME TOGGLE */}
       <div className="flex flex-col items-center justify-center py-4">
         <label className="relative inline-flex cursor-pointer items-center">
@@ -11,17 +11,17 @@ export default function SideBar() {
       </div>
 
       {/* ROUTES */}
-      <div className="flex flex-col items-center gap-8 text-gray-400 text-xl">
-        <i className="fa-solid fa-atom hover:scale-110 transition"></i>
-        <i className="fa-solid fa-bag-shopping hover:scale-110 transition"></i>
-        <i className="fa-regular fa-envelope hover:scale-110 transition"></i>
-        <i className="fa-solid fa-users-line hover:scale-110 transition"></i>
-        <i className="fa-solid fa-layer-group hover:scale-110 transition"></i>
-        <i className="fa-solid fa-gear hover:scale-110 transition"></i>
+      <div className="flex flex-col items-center rounded-4xl bg-white w-12 py-4! gap-8 text-gray-400 text-xl">
+        <i className="fa-solid fa-atom hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-solid fa-bag-shopping hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-regular fa-envelope hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-solid fa-users-line hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-solid fa-layer-group hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-solid fa-gear hover:scale-110 transition hover:text-black"></i>
       </div>
 
       {/* AUTH */}
-      <div className="flex flex-col items-center gap-5 pb-6 text-xl">
+      <div className="flex flex-col items-center gap-5 pb-6 text-xl rounded-4xl bg-white w-12 py-4!">
         <i className="fa-regular fa-circle-question hover:scale-110 transition"></i>
         <i className="fa-solid fa-arrow-right-from-bracket hover:scale-110 transition"></i>
       </div>

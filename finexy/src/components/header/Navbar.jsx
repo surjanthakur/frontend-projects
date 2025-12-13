@@ -12,8 +12,8 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-40 w-full p-2!">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+    <nav className="sticky top-0 z-40 w-screen ">
+      <div className="mx-auto flex h-20  items-center justify-between px-6!">
         {/* LOGO */}
         <div className="flex items-center gap-3 bg-white px-3.5! h-12 rounded-4xl">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-white">
@@ -52,9 +52,18 @@ export default function Navbar() {
           </button>
         </div>
         {/* random user section */}
-        <div className="h-16 bg-white rounded-4xl">
-          <img></img>
-          <p></p>
+        <div className="flex h-14 items-center gap-3 rounded-full bg-white px-1! shadow-sm">
+          {/* avatar */}
+          <img
+            src={user?.picture?.large}
+            alt="user"
+            className="h-12 w-12 rounded-full object-cover"
+          />
+
+          {/* email */}
+          <p className="max-w-35 truncate text-sm font-medium text-gray-600">
+            {user.email}
+          </p>
         </div>
       </div>
     </nav>

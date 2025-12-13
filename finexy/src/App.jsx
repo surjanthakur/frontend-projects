@@ -20,11 +20,12 @@ function App() {
       }
     }
     getRandomUser()
-  }, [])
+  }, [setUser])
   return (
     <>
       <RandomUserProvider value={{ user, setUser }}>
         <Navbar />
+        <SideBar />
       </RandomUserProvider>
     </>
   )
