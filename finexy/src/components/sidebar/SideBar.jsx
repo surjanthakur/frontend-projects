@@ -1,6 +1,6 @@
 export default function SideBar() {
   return (
-    <div className="flex h-screen mt-4! w-20 absolute top-0 left-0 z-40 flex-col items-center justify-around text-black transition-colors duration-300 ">
+    <div className="flex h-screen mt-4! w-20 fixed top-0 left-0 z-40 flex-col items-center justify-around text-black transition-colors duration-300 ">
       {/* THEME TOGGLE */}
       <div className="flex flex-col items-center justify-center py-4">
         <label className="relative inline-flex cursor-pointer items-center">
