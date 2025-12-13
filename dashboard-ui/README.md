@@ -1,16 +1,31 @@
-# React + Vite
+# 📊 Finance Dashboard UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### A modern Finance Dashboard UI built with React, Tailwind CSS, and Chart.js.
 
-Currently, two official plugins are available:
+- Designed to feel fast, readable, and sharp—numbers first, noise last.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ## This dashboard focuses on visual clarity: clean cards, responsive layouts, and charts that tell a story instead of shouting statistics.
 
-## React Compiler
+- # ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📈 Interactive charts powered by Chart.js
 
-## Expanding the ESLint configuration
+- 🎨 Clean, minimal UI with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Fast, component-based architecture using React
+
+- 🌗 Dark mode–friendly styling
+
+- 📱 Fully responsive layout (desktop → mobile)
+
+- 🧱 Modular components (cards, navbar, sidebar, charts)
+
+- 🛠 Tech Stack
+
+- React – UI logic & component structure
+
+- Tailwind CSS – Utility-first styling, zero nonsense
+
+- Chart.js – Data visualization that actually makes sense
+
+- JavaScript (ES6+)
