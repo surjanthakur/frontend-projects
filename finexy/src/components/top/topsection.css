@@ -1,0 +1,440 @@
+/* Container */
+.top-section-container {
+  padding: 24px 16px;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Balance Card */
+.balance-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: 1px solid #f3f4f6;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.card-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 12px;
+}
+
+.currency-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.chevron-icon {
+  width: 16px;
+  height: 16px;
+  color: #9ca3af;
+}
+
+/* Balance Section */
+.balance-section {
+  margin-bottom: 16px;
+}
+
+.balance-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.balance-growth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #10b981;
+}
+
+.trend-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.growth-percent {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.growth-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.transfer-button,
+.request-button {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.transfer-button {
+  background: #000000;
+  color: white;
+}
+
+.transfer-button:hover {
+  background: #1f2937;
+}
+
+.request-button {
+  background: white;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.request-button:hover {
+  background: #f9fafb;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Wallets Section */
+.wallets-section {
+  margin-top: 24px;
+}
+
+.wallets-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.wallets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.wallet-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.wallet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.wallet-currency {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wallet-flag {
+  width: 20px;
+  height: 12px;
+}
+
+.wallet-code {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.wallet-menu-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0;
+}
+
+.wallet-menu-btn:hover {
+  color: #4b5563;
+}
+
+.menu-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.wallet-amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.wallet-limit {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.wallet-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.wallet-badge.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.wallet-badge.inactive {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+/* EUR Flag */
+.eur-flag {
+  width: 20px;
+  height: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+}
+
+.eur-black {
+  flex: 1;
+  background: #000000;
+}
+
+.eur-red {
+  flex: 1;
+  background: #dc2626;
+}
+
+.eur-yellow {
+  flex: 1;
+  background: #facc15;
+}
+
+/* GBP Flag */
+.gbp-flag {
+  width: 20px;
+  height: 12px;
+  border-radius: 2px;
+  background: #1e3a8a;
+  position: relative;
+  overflow: hidden;
+}
+
+.gbp-cross-white-h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: white;
+  transform: translateY(-50%);
+}
+
+.gbp-cross-white-v {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.gbp-cross-red-h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: #dc2626;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.gbp-cross-red-v {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  background: #dc2626;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Right Column */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.small-cards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Small Cards Base Styles */
+.earnings-card,
+.spending-card,
+.income-card,
+.revenue-card {
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.earnings-card {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+  color: white;
+}
+
+.spending-card,
+.income-card,
+.revenue-card {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+}
+
+.small-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.small-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.small-card-title.spending,
+.small-card-title.income,
+.small-card-title.revenue {
+  color: #6b7280;
+  opacity: 1;
+}
+
+.small-card-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.75;
+}
+
+.small-card-icon.gray {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+.small-card-amount {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.small-card-amount.dark {
+  color: #111827;
+}
+
+.small-card-growth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.small-card-growth.positive {
+  color: #10b981;
+}
+
+.small-card-growth.negative {
+  color: #ef4444;
+}
+
+.small-trend-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.small-growth-percent {
+  font-weight: 500;
+}
+
+.small-growth-text {
+  opacity: 0.75;
+}
+
+.small-growth-text.gray {
+  color: #6b7280;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wallets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-cards-row {
+    grid-template-columns: 1fr;
+  }
+}

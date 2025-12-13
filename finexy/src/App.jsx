@@ -1,6 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react'
-import { SideBar, Navbar } from './components/index'
+import { SideBar, Navbar, TopSection } from './components/index'
 import { RandomUserProvider } from './context/user.js'
 function App() {
   const [user, setUser] = useState('')
@@ -25,7 +25,14 @@ function App() {
     <>
       <RandomUserProvider value={{ user, setUser }}>
         <Navbar />
-        <SideBar />
+        <div className="main-grid">
+          <div>
+            <SideBar />
+          </div>
+          <div>
+            <TopSection />
+          </div>
+        </div>
       </RandomUserProvider>
     </>
   )
