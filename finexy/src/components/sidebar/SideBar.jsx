@@ -17,7 +17,7 @@ export default function SideBar() {
         <i className="fa-regular fa-envelope hover:scale-110 transition hover:text-black"></i>
         <i className="fa-solid fa-users-line hover:scale-110 transition hover:text-black"></i>
         <i className="fa-solid fa-layer-group hover:scale-110 transition hover:text-black"></i>
-        <i className="fa-solid fa-gear hover:scale-110 transition hover:text-black"></i>
+        <i className="fa-solid fa-gear hover:scale-110 transition "></i>
       </div>
 
       {/* AUTH */}

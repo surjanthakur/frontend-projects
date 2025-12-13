@@ -1,5 +1,6 @@
 import { TrendingUp, TrendingDown, Copy, Lock } from 'lucide-react'
 import Heading from './Heading'
+import IncomeBarChart from './barChart'
 import './topsection.css'
 
 export default function TopSection() {
@@ -219,9 +220,21 @@ export default function TopSection() {
             </div>
           </div>
         </div>
-        <div className="graph-card">
-          <h1>Total income</h1>
-          <p>view your income in a certain period of time</p>
+        {/* bar chart */}
+        <div className="graph-card p-6! rounded-2xl bg-white shadow">
+          <h1 className="text-xl font-semibold">Total income</h1>
+          <p className="text-sm text-gray-500 mb-4">
+            view your income in a certain period of time
+          </p>
+          <IncomeBarChart />
+        </div>
+        {/* bar chart  2*/}
+        <div className="graph-card p-6! rounded-2xl bg-white shadow">
+          <h1 className="text-xl font-semibold">Total income</h1>
+          <p className="text-sm text-gray-500 mb-4">
+            view your income in a certain period of time
+          </p>
+          <IncomeBarChart />
         </div>
       </div>
     </div>
